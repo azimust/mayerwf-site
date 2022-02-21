@@ -1,0 +1,153 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@font-face {
+	font-family: 'Warface English';
+	src: url('../fonts/warfaceregularenglish.eot');
+	src: local('☺'), url('../fonts/warfaceregularenglish.woff') format('woff'), url('../fonts/warfaceregularenglish.ttf') format('truetype'), url('../fonts/warfaceregularenglish.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+	min-width: 1170px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+.__container {
+	max-width: 1400px;
+	margin: 0px auto;
+}
+.header {
+	height: 105px;
+	padding: 20px 0px;
+	background-color: #000000;
+}
+.header__row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header__menu {
+	padding: 0px 90px 0px 0px;
+}
+.menu__links {
+	display: inline-block;
+}
+.menu__link {
+	padding: 0px 30px 0px 0px;
+	font-family: 'Warface English';
+	font-size: 40.3px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #ff6c00;
+}
+.menu__link:hover{
+	color: #ffffff;
+}
+.header__text {
+	font-family: 'Warface English';
+	font-size: 51px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.header__logo {
+	margin: 0px 0px 0px 30px;
+}
+/* body */
+.body {
+	width: 100%;
+	height: 1100px;
+
+	background: url(/img/bg.png) center no-repeat;
+	background-size: cover;
+}
+.body__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.body__column {
+	margin: 70px 0px 0px 0px;
+	padding: 0px 40px;
+	flex: 0 1 33.333%;
+}
+.body__item {
+	border: 3px solid #ff6c00;
+	flex-direction: column;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.603);
+}
+.body__title {
+	font-family: 'Warface English';
+	font-size: 39.4px;
+	line-height: 22px;
+	color: #000000;
+	background-color: white;
+	text-align: center;
+	padding: 20px 0px;
+}
+.body__text {
+	font-family: 'Warface English';
+	font-size: 32.2px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #ffffff;
+}
+.body__text_1{
+	line-height: 46.3px;
+	font-size: 30px;
+}
+.body__text_3{
+	line-height: 30px;
+	font-size: 30px;
+}
+.body__button {
+	padding: 20px 0px;
+	font-family: 'Warface English';
+	font-size: 32.2px;
+	line-height: 24px;
+	display: block;
+	background-color: white;
+	text-align: center;
+	color: #000000;
+}
+.body__button:hover{
+	color: #ff6c00;
+}
+/*footer*/
+.footer {
+	background-color: #000000;
+	height: 100px;
+}
+.footer__row {
+	padding: 20px 0px 20px 0px;
+}
+.footer__text {
+	text-align: center;
+	font-family: 'Warface English';
+	font-size: 30px;
+	line-height: 46px;
+	color: #ffffff;
+}
